@@ -1,5 +1,5 @@
-window.onload = function(){
-	var oDiv = document.getElementById('icon fa-facebook');
+.onload = function(){
+	var oDiv = document.getElementById('hand icon fa-hand-o-up');
 	oDiv.onmouseover = function(){
 		startMove(10,0);
 	}
@@ -11,7 +11,7 @@ window.onload = function(){
 var timer = null;
 function startMove(speed,itagle){
 	clearInterval(timer);
-	var oDiv = document.getElementById('icon fa-facebook');
+	var oDiv = document.getElementById('hand icon fa-hand-o-up');
 	timer = setInterval(function(){
 		if(oDiv.offsetLeft==itagle){
 			clearInterval(timer);

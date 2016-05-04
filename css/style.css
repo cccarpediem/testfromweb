@@ -604,6 +604,10 @@
 
 			ul.icons li {
 				display: inline-block;
+				padding: 0 0 0 0;
+			}
+
+			ul.icons a{
 				padding: 0 1em 0 0;
 			}
 
@@ -611,9 +615,9 @@
 					padding-right: 0;
 				}
 
-				ul.icons li .icon:before {
+				/*ul.icons li .icon:before {
 					font-size: 2em;
-				}
+				}*/
 
 		ul.actions {
 			cursor: default;
@@ -1143,8 +1147,21 @@
 		}
 
 			#footer .icons li {
-				padding-right: 2.5em;
+				transition:0.2s ease-out;
+				-moz-transition:0.2s ease-out;
+				-webkit-transition:0.2s ease-out;
+				font-size: 2em;
 			}
+
+			#footer .icons li:hover{transform: rotate(360deg) scale(2);
+									-webkit-transform: rotate(360deg) scale(2);
+			}
+
+
+
+				#footer .icons li:first-child{
+
+				}
 
 				#footer .icons li:last-child {
 					padding-right: 0;
