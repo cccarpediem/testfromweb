@@ -608,7 +608,7 @@
 			}
 
 			ul.icons a{
-				padding: 0 1em 0 0;
+				padding: 0 3em 0 0;
 			}
 
 				ul.icons li:last-child {
@@ -984,6 +984,103 @@
 							color: #484848;
 						}/* a default hover*/
 
+
+						/*line animition*/ /*common*/
+						.line{
+							display:block;
+							position:absolute;
+							background: none;
+							transition:0.2s ease-out;
+							-moz-transition:0.2s ease-out;
+							-webkit-transition:0.2s ease-out;
+
+						}
+
+						#header nav > ul > li:hover .line{
+							background: #fff;
+						}
+							
+							/*feature top*/
+							.line-top{
+								height:1.1px;
+								width:0px;
+								left:-20%;
+								top:45px;
+							}
+
+							.line-bot{
+								height:1.1px;
+								width:0px;
+								right:71%;
+								top:13px;
+							}
+
+							#header nav > ul > li:hover .line-top{
+								width:52.5px;
+								left:1px;
+							}
+
+							#header nav > ul > li:hover .line-bot{
+								width:52.5px;
+								right:277px;
+							}
+
+							/*feature two*/
+							.line-two{
+								height: 1.1px;
+								width:0px;
+								left:20%;
+								top:45px;
+							}
+
+							.line-twob{
+								height: 1.1px;
+								width:0px;
+								right:35%;
+								top:13px;
+							}
+
+							#header nav > ul > li:hover .line-two{
+								width:73.4px;
+								left:108px;
+							}
+
+							#header nav > ul > li:hover .line-twob{
+								width:73.4px;
+								right:149px;
+							}
+
+							/*feature three*/
+							.line-three{
+								height: 1.1px;
+								width:0px;
+								left:60%;
+								top:45px;
+							}
+
+							.line-threeb{
+								height: 1.1px;
+								width:0px;
+								right:-20%;
+								top:13px;
+							}
+
+							#header nav > ul > li:hover .line-three{
+								width:93.8px;
+								left:236px;
+							}
+
+							#header nav > ul > li:hover .line-threeb{
+								width:93.8px;
+								right:1.1px;
+							}
+
+
+
+
+
+
+
 					#header nav > ul > li:first-child {
 						margin-left: 0;
 					}/*first character*/
@@ -1032,8 +1129,8 @@
 				}
 
 			#header.alt nav {
-				right: 2em;
-				top: 2em;
+				right: 2em;/*right header from right*/
+				top: 2em;/*right header from top*/
 			}
 
 				#header.alt nav a {
