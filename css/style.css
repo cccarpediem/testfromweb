@@ -455,7 +455,17 @@
 				.feature-grid .feature .image img {
 					display: inline;
 					max-width: 100%;
-				}
+					opacity: 0.7;
+					transition:0.2s ease-out;
+					-moz-transition:0.2s ease-out;
+					-webkit-transition:0.2s ease-out; 
+				}/*增加透明动画*/
+
+
+				.feature-grid .feature .image img:hover{
+					filter:alpha(opacity:30);
+					opacity: 1.5; 
+					}/*opacity img*/
 
 			.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
 				float: right;
@@ -541,7 +551,7 @@
 			.image.rounded img {
 				border: solid 0.5em rgba(144, 144, 144, 0.25);
 				border-radius: 100%;
-			}
+			}/*图片圆角边框*/
 
 		.image.captioned {
 			border-radius: 0;
